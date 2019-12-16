@@ -18,8 +18,8 @@ pd.set_option('display.width', 1000)
 geoData = "http://cocl.us/Geospatial_data"
 radius=500
 LIMIT=100
-CLIENT_ID = 'AO4R21JIVFD5F2AN0IZTNSZIZCFLUEKHPMI5ULDTPDZ5G41P' # your Foursquare ID
-CLIENT_SECRET = 'ZLGHMTHWFLNA1CVY53ZOXXU5BGE2PZV3WH5XWMCT0WU1FUNK' # your Foursquare Secret
+CLIENT_ID = 'AO4R21JIVFD5F2AN0IZTNSZIZCFLSSUEKHPMI5ULDTPDZ5G41P' # your Foursquare ID, this has been masked 
+CLIENT_SECRET = 'ZLGHMTHWFLNA1CVY53ZOXXU5BGE2PZV3WH5XWMCT0WU1FUNK' # your Foursquare Secret, this has been masked 
 VERSION = '20180605' # Foursquare API version
 listOfCo = pd.read_csv(geoData)
 html_doc = "https://en.wikipedia.org/wiki/List_of_postal_codes_of_Canada:_M"
@@ -249,4 +249,5 @@ for lat, lon, poi, cluster in zip(toronto_merged['Latitude'], toronto_merged['Lo
 
 map_clusters
 
+## display clsuter number 1
 print(toronto_merged.loc[toronto_merged['Cluster_Labels'] == 1, toronto_merged.columns[[1] + list(range(5, toronto_merged.shape[1]))]])
