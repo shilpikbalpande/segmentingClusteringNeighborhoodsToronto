@@ -55,6 +55,7 @@ df3 = df3.drop(['level_0','index'],axis = 1)
 df3 = pd.merge(df3, listOfCo, on='Postcode', how='inner')
 
 print (df3.shape)
+print (df3.tail)
 
 address = 'Toronto, Canada'
 geolocator = Nominatim(user_agent="ny_explorer")
