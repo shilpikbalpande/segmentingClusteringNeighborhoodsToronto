@@ -18,7 +18,7 @@ pd.set_option('display.width', 1000)
 geoData = "http://cocl.us/Geospatial_data"
 radius=500
 LIMIT=100
-CLIENT_ID = 'AO4R21JIVFD5F2AN0IZTNSZIZCFLSSUEKHPMI5ULDTPDZ5G41P' # your Foursquare ID, this has been masked 
+CLIENT_ID = 'AO4R21JIVFD5F2AN0IZTNSZIZCFLUEKHPMI5ULDTPDZ5G41P' # your Foursquare ID, this has been masked
 CLIENT_SECRET = 'ZLGHMTHWFLNA1CVY53ZOXXU5BGE2PZV3WH5XWMCT0WU1FUNK' # your Foursquare Secret, this has been masked 
 VERSION = '20180605' # Foursquare API version
 listOfCo = pd.read_csv(geoData)

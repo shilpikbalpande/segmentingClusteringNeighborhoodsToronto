@@ -1,0 +1,12 @@
+import geocoder # import geocoder
+from geopy.geocoders import Nominatim # convert an address into latitude and longitude values
+
+
+address = 'Toronto, Canada'
+geolocator = Nominatim(user_agent="ny_explorer")
+location = geolocator.geocode(address)
+latitude = location.latitude
+longitude = location.longitude
+
+
+print(latitude,longitude )
